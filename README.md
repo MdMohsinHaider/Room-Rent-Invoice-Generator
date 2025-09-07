@@ -19,6 +19,10 @@ A simple, responsive web application to generate printable or printable-style ro
 - JavaScript (vanilla ES6)
 - Browser native print functionality
 
+## Live Demo
+
+Try it live at [https://mdmohsinhaider.github.io/Room-Rent-Invoice-Generator/](https://mdmohsinhaider.github.io/Room-Rent-Invoice-Generator/)
+
 ## Getting Started
 
 ### Prerequisites
