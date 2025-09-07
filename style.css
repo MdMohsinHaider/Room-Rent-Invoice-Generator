@@ -1,0 +1,157 @@
+body {
+    background: #f5f5f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.container {
+    max-width: 720px;
+    margin: 48px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px #0002;
+    padding: 32px;
+}
+h2 {
+    color: #23455f;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+form label {
+    display: block;
+    margin: 10px 0 4px 0;
+    font-weight: 500;
+    color: #23455f;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 14px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+.add-row-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap; /* allows line break */
+}
+.add-row-group select,
+.add-row-group input,
+.add-row-group button {
+    flex: 1 1 auto;
+    min-width: 120px;
+    margin-bottom: 0;
+}
+.removeRowBtn {
+    background: #e87e7e;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button {
+    background: #23455f;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 6px;
+}
+button:disabled {
+    background: #bbb;
+    cursor: default;
+}
+.invoice {
+    margin-top: 32px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px #0001;
+}
+.invoice h3 {
+    margin: 0;
+    color: #23455f;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.invoice strong {
+    font-weight: 700;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.table th, .table td {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1em;
+}
+.table th {
+    background: #e8ded0;
+    color: #23455f;
+    font-weight: bold;
+}
+.table td:last-child {
+    background: #f8f2dd;
+    font-weight: bold;
+}
+.summary {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #c14542;
+    background: #fad3d2;
+    text-align: center;
+    padding: 24px 0 10px 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: none;
+}
+.summary span {
+    display: inline-block;
+    font-size: 2em;
+    background: #e87e7e22;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-family: serif;
+    margin-top: 6px;
+}
+/* Responsive layout for small screens below 600px */
+@media (max-width: 600px) {
+    .add-row-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .add-row-group select,
+    .add-row-group input,
+    .add-row-group button {
+        width: 100%;
+        min-width: unset;
+        margin-bottom: 8px;
+    }
+    .add-row-group button {
+        margin-bottom: 0;
+    }
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #invoice, #invoice * {
+        visibility: visible;
+    }
+    #invoice {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}

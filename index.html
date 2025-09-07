@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Room Rent Invoice Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="invoiceForm">
+            <h2>Rent Dues</h2>
+            <label>Name:</label>
+            <input type="text" id="renter" required>
+            <label>Date:</label>
+            <input type="date" id="date" required>
+            <div id="rows"></div>
+            <button type="button" id="addRowBtn">Add More Row</button>
+            <button type="submit">Generate Invoice</button>
+        </form>
+        <div id="invoice" class="invoice"></div>
+        <button id="printBtn" style="display:none;">Print Invoice</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
